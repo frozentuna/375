@@ -3,6 +3,7 @@ import Nav from 'reactstrap/lib/Nav';
 import NavItem from 'reactstrap/lib/NavItem';
 import NavLink from 'reactstrap/lib/NavLink';
 import Tweet from '../Tweet/Tweet';
+import { Link } from 'react-router-dom';
 
 export default class Menu extends React.Component<{}> {
     public render() {
@@ -10,13 +11,19 @@ export default class Menu extends React.Component<{}> {
             <div>
                 <Nav pills>
                     <NavItem>
-                        <NavLink href="/">Home</NavLink>
+                        <NavLink>
+                            <Link to="/">Home</Link>
+                        </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="/about">About</NavLink>
+                        <NavLink>
+                            <Link to="/about">About</Link>
+                        </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="/photos">Photos</NavLink>
+                        <NavLink>
+                            <Link to="/photos">Photos</Link>
+                        </NavLink>
                     </NavItem>
                     <NavItem>
                         <Tweet />
