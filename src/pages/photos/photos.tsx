@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import Card from 'reactstrap/lib/Card';
 import CardBody from 'reactstrap/lib/CardBody';
 import Col from 'reactstrap/lib/Col';
+import Container from 'reactstrap/lib/Container';
 
 export default class Photos extends React.Component {
 
     public render() {
         return (
-            <div>
+            <Container>
                 <Col xs="12" md={{ size: 6, offset: 3 }}>
                     <Card>
                         <CardBody>
@@ -20,7 +21,7 @@ export default class Photos extends React.Component {
                         </CardBody>
                     </Card>
                 </Col>
-            </div>
+            </Container>
         );
     }
 }
