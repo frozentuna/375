@@ -7,17 +7,15 @@ import Videos from './pages/videos/videos';
 import Home from './pages/home/home';
 import About from './pages/about/about';
 
-import Titlebar from './Components/Titlebar/Titlebar';
-import Footer from './Components/Footer/Footer';
-import Menu from './Components/Menu/menu';
+import Footer375 from './Components/Footer/Footer';
+import Navbar375 from './Components/Navbar/Navbar';
 
 class App extends React.Component {
   public render() {
     return (
       <Router>
         <div className="App">
-          <Titlebar />
-          <Menu />
+          <Navbar375 />
           <Switch>
             <Route path="/about" component={About} />
             <Route path="/videos" component={Videos} />
@@ -25,7 +23,7 @@ class App extends React.Component {
             <Route path="/" component={Home} />
             <Route component={Home} />
           </Switch>
-          <Footer />
+          <Footer375 />
         </div>
       </Router>
 

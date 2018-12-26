@@ -7,7 +7,7 @@ export default class Tweet extends React.Component {
         return (
             <div>
                 <TwitterShareButton url="https://375.supersize.love/" title="佐竹飯店後援会">
-                    <TwitterIcon size={32} round={true} />
+                    <TwitterIcon size={24} round={true} />
                 </TwitterShareButton>
             </div>
         );
