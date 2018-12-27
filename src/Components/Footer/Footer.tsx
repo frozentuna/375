@@ -9,23 +9,19 @@ export default class Footer375 extends React.Component {
 
     public render() {
         return (
-            <Container>
-                <Col xs="12" md={{ size: 6, offset: 3 }}>
-                    <div className="navbar" >
-                        <Col xs="12" md={{ size: 6, offset: 3 }}>
-
-                            <footer>
-                                <p>
-                                    created by まぐろうP<br />
-                                    <FaTwitter /> @frozentuna<br />
-                                    <FaMastodon /> frozentuna@imastodon.net<br />
-                                </p>
-                            </footer>
-                        </Col>
-                    </div >
-                </Col>
-            </Container>
-
+            <div className="navbar" >
+                <Container fluid>
+                    <Col xs="12" md={{ size: 6, offset: 3 }}>
+                        <footer>
+                            <p>
+                                created by まぐろうP<br />
+                                <FaTwitter /> @frozentuna<br />
+                                <FaMastodon /> frozentuna@imastodon.net<br />
+                            </p>
+                        </footer>
+                    </Col>
+                </Container>
+            </div >
         );
     }
 }

@@ -35,7 +35,7 @@ export default class NavbarSp extends React.Component<{}, { isOpen: boolean }> {
 
     public render() {
         return (
-            <Container>
+            <Container fluid>
                 <Col xs="12" md={{ size: 6, offset: 3 }}>
                     <Navbar expand="xs">
                         <NavbarBrand>
