@@ -40,8 +40,8 @@ export default class NavbarSp extends React.Component<{}, { isOpen: boolean }> {
                     <Navbar expand="xs">
                         <NavbarBrand>
                             佐竹飯店後援会
-                    </NavbarBrand>
-                        <Nav className="ml-auto" navbar>
+                        </NavbarBrand>
+                        {/* <Nav className="ml-auto" navbar>
                             <NavbarToggler onClick={this.toggle} />
                             <Collapse isOpen={this.state.isOpen} navbar>
                                 <UncontrolledDropdown nav inNavbar>
@@ -61,7 +61,7 @@ export default class NavbarSp extends React.Component<{}, { isOpen: boolean }> {
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
                             </Collapse>
-                        </Nav>
+                        </Nav> */}
                     </Navbar>
                 </Col>
 
